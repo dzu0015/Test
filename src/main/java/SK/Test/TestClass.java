@@ -66,12 +66,7 @@ public class TestClass {
 	}
 
 	public static void printEmployees(List<Employee> employees) {
-		/*
-		 * Comparator<Employee> c = (s1, s2) ->
-		 * s1.GetStateName().compareTo(s2.GetStateName()) ;
-		 * 
-		 * employees.sort(c);
-		 */
+		
 		Collections.sort(employees, new Comparator<Employee>() {
 
 			public int compare(Employee o1, Employee o2) {
